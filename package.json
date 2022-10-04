@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "crypt": "^0.0.2",
     "dotenv": "^16.0.3",
     "express": "^4.18.1",
-    "mongoose": "^6.6.4"
+    "mongoose": "^6.6.4",
+    "nodemon": "^2.0.20"
   }
 }
