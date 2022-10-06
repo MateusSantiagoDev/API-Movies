@@ -6,10 +6,11 @@ export class entity {
     this.title = params.title;
     this.evaluation = params.evaluation;
     this.details = params.details;
+    this.image = params.image;
   }
 
   validate() {
-    if (!this.title || !this.evaluation || !this.details) {
+    if (!this.title || !this.evaluation || !this.details || !this.image) {
       throw new Error("fill in all fields");
     }
   }
@@ -20,6 +21,7 @@ export class entity {
       title: this.title,
       evaluation: this.evaluation,
       details: this.details,
+      image: this.image,
     };
   }
 }

@@ -5,6 +5,7 @@ const schema = new Schema({
     title: { type: String, required: true },
     evaluation: { type: Number, required: true },
     details: { type: String, required: true }, 
+    image: {type: String, required: true },
 });
 
 
