@@ -7,7 +7,6 @@ const schema = new Schema({
     details: { type: String, required: true }, 
     image: {type: String, required: true },
     url: { type: String, required: true },
-    information: { type: String, required: true },
 });
 
 
