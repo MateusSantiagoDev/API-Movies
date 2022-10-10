@@ -6,6 +6,8 @@ const schema = new Schema({
     evaluation: { type: Number, required: true },
     details: { type: String, required: true }, 
     image: {type: String, required: true },
+    url: { type: String, required: true },
+    information: { type: String, required: true },
 });
 
 
