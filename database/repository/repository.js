@@ -22,4 +22,8 @@ export class repository {
       new: true,
     });
   }
+
+  async findByName(name){
+    return await Model.find({title: name});
+  }
 }

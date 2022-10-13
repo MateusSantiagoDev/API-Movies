@@ -10,6 +10,7 @@ import { makeDelete } from "./factories/deleteFactory.js";
 import { makeFindAll } from "./factories/findAllFactory.js";
 import { makeFindById } from "./factories/findByIdFactory.js";
 import { makeUpdate } from "./factories/updateFactory.js";
+import { makeFindByName } from "./factories/findByNameFactory.js"
 
 databaseConnect.connection();
 
@@ -22,6 +23,7 @@ const delet = makeDelete(router);
 const findAll = makeFindAll(router);
 const findById = makeFindById(router);
 const update = makeUpdate(router);
+const findByName = makeFindByName(router);
 
 app.use(express.json());
 app.use(cors());
@@ -31,5 +33,6 @@ app.use("/api", delet.route());
 app.use("/api", findAll.route());
 app.use("/api", findById.route());
 app.use("/api", update.route());
+app.use("/api", findByName.route());
 
 app.listen(port, () => console.info(`Servidor rodando em http://localhost:${port}`));
